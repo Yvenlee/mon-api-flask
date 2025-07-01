@@ -12,7 +12,7 @@ import time
 app = Flask(__name__)
 
 # Chemins des fichiers de données
-DATA_DIR = r"C:\Users\yvenl\OneDrive\Bureau\GameDevAssists\Notebooks\data"
+DATA_DIR = r"C:\Users\yvenl\OneDrive\Bureau\mon-api-flask\data"
 GAMES_FILE = os.path.join(DATA_DIR, "games.json")
 IMAGES_FILE = os.path.join(DATA_DIR, "image_urls.json")
 
