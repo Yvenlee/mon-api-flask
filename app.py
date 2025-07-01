@@ -128,6 +128,12 @@ def extract_reviews(driver, remaining_limit):
         except Exception:
             pass
     return extracted_reviews
+# Route d'accueil simple
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({
+        "message": "Bienvenue sur l'API Steam Review Scraper. Utilisez la route POST /scrape avec un JSON contenant 'game_name'."
+    })
 
 @app.route('/scrape', methods=['POST'])
 def scrape():
